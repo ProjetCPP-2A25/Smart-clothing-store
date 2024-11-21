@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pour youssef/abri (1).png</file>
+        <file>pour youssef/abri.png</file>
+        <file>pour youssef/acc.png</file>
+        <file>pour youssef/acci.png</file>
+        <file>pour youssef/bg.png</file>
+        <file>pour youssef/bgW.png</file>
+        <file>pour youssef/contact.png</file>
+        <file>pour youssef/courrier.png</file>
+        <file>pour youssef/deconnexion (1).png</file>
+        <file>pour youssef/deconnexion.png</file>
+        <file>pour youssef/emp.png</file>
+        <file>pour youssef/empCon.png</file>
+        <file>pour youssef/employes (2).png</file>
+        <file>pour youssef/employes.png</file>
+        <file>pour youssef/listEmp.png</file>
+        <file>pour youssef/livraison-rapide (1).png</file>
+        <file>pour youssef/logB.png</file>
+        <file>pour youssef/logistics-delivery.png</file>
+        <file>pour youssef/logo.png</file>
+        <file>pour youssef/logoG.png</file>
+        <file>pour youssef/picP.png</file>
+        <file>pour youssef/rech.png</file>
+        <file>pour youssef/rechCon.png</file>
+        <file>pour youssef/rechsal.png</file>
+        <file>pour youssef/Sal.png</file>
+        <file>pour youssef/stat.png</file>
+        <file>pour youssef/undo.png</file>
+    </qresource>
+</RCC>
