@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>imgs/abri (1).png</file>
+        <file>imgs/abri.png</file>
+        <file>imgs/acc.png</file>
+        <file>imgs/acci.png</file>
+        <file>imgs/bg.png</file>
+        <file>imgs/bgW.png</file>
+        <file>imgs/cercle.png</file>
+        <file>imgs/contact.png</file>
+        <file>imgs/courrier.png</file>
+        <file>imgs/deconnexion (1).png</file>
+        <file>imgs/deconnexion.png</file>
+        <file>imgs/emp.png</file>
+        <file>imgs/empCon.png</file>
+        <file>imgs/employes (2).png</file>
+        <file>imgs/employes.png</file>
+        <file>imgs/listEmp.png</file>
+        <file>imgs/livraison-rapide (1).png</file>
+        <file>imgs/logB.png</file>
+        <file>imgs/logistics-delivery.png</file>
+        <file>imgs/logo.png</file>
+        <file>imgs/logoG.png</file>
+        <file>imgs/picP.png</file>
+        <file>imgs/rech.png</file>
+        <file>imgs/rechCon.png</file>
+        <file>imgs/rechsal.png</file>
+        <file>imgs/Sal.png</file>
+        <file>imgs/stat.png</file>
+        <file>imgs/undo.png</file>
+        <file>../../Downloads/pour zoro.zip</file>
+        <file>imgs/ajouter-un-bouton.png</file>
+        <file>imgs/blue.png</file>
+        <file>imgs/chercher.png</file>
+        <file>imgs/diagramme-circulaire.png</file>
+        <file>imgs/fichier.png</file>
+        <file>imgs/filtre.png</file>
+        <file>imgs/importer-exporter.png</file>
+        <file>imgs/mettre-a-jour-les-fleches.png</file>
+        <file>imgs/supprimer.png</file>
+    </qresource>
+</RCC>

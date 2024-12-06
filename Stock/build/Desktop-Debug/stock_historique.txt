@@ -1,0 +1,12 @@
+2024-11-19 23:42:02 - Modifié - ID: 20, Nom: T-shirt , Quantité: 400, Prix: 20, Marque: Zara
+2024-11-20 00:45:18 - Modifié - ID: 454, Nom: zazrf, Quantité: 242, Prix: 300, Marque: rtrh
+2024-11-20 00:45:34 - Modifié - ID: 12345, Nom: zara, Quantité: 100, Prix: 200, Marque: pull
+2024-11-20 00:47:39 - Modifié - ID: 454, Nom: zazrf, Quantité: 242, Prix: 300, Marque: LEVIS
+2024-11-20 23:12:36 - Supprimé - ID: 0, Nom: , Quantité: 0, Prix: 0, Marque: 
+2024-11-21 00:43:39 - Modifié - ID: 37, Nom: Robe, Quantité: 120, Prix: 420, Marque: Mango
+2024-11-22 09:00:25 - Supprimé - ID: 0, Nom: , Quantité: 0, Prix: 0, Marque: 
+2024-11-22 09:00:41 - Modifié - ID: 43, Nom: Veste en cuir, Quantité: 300, Prix: 50, Marque: Bershka
+2024-11-22 09:01:48 - Modifié - ID: 43, Nom: Veste en cuir, Quantité: 350, Prix: 50, Marque: Bershka
+2024-11-22 09:01:59 - Modifié - ID: 12, Nom: Baskets , Quantité: 420, Prix: 35, Marque: Nike
+2024-11-22 10:29:26 - Modifié - ID: 37, Nom: Robe, Quantité: 110, Prix: 420, Marque: Mango
+2024-11-22 10:35:50 - Modifié - ID: 37, Nom: Robe, Quantité: 130, Prix: 420, Marque: Mango
