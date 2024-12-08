@@ -6,6 +6,7 @@
 #include <QSqlDatabase>
 #include <QRegularExpression>
 #include <QDate>
+#include <QFile>
 
 Employe::Employe()
 {
@@ -179,7 +180,7 @@ bool Employe::ajouter() {
     query.bindValue(":LAST_DAY_OF_LEAVE", LAST_DAY_OF_LEAVE);
     query.bindValue(":NBDAYS", NBDAYS);
 
-    // Execute the query
+    /* Execute the query
     if (!query.exec()) {
         qDebug() << "SQL Error: " << query.lastError().text();
         return false;
@@ -187,7 +188,19 @@ bool Employe::ajouter() {
         qDebug() << "Record added successfully.";
     }
 
-    return true; // Indicate success
+    return true; // Indicate success*/
+    bool success = query.exec();
+            if (success) {
+                enregistrerHistorique("Ajout d'un employe");
+                if (!LEAVE_TYPE.isEmpty() && !FIRST_DAY_OF_LEAVE.isNull() && !LAST_DAY_OF_LEAVE.isNull() && NBDAYS > 0) {
+                        enregistrerHistoriqueCong("Added vacation for employee with CIN: " + QString::number(CIN) +
+                                                  " Leave Type: " + LEAVE_TYPE +
+                                                  " From: " + FIRST_DAY_OF_LEAVE.toString("yyyy-MM-dd") +
+                                                  " To: " + LAST_DAY_OF_LEAVE.toString("yyyy-MM-dd") +
+                                                  " Days: " + QString::number(NBDAYS));
+                    }
+            }
+            return success;
 }
 
 
@@ -202,10 +215,15 @@ bool Employe::supprimer(int CIN)
     QSqlQuery query;
     query.prepare("DELETE from EMPLOYEE where CIN=:CIN");
     query.bindValue(0, CIN);
-    return query.exec();
+    bool success = query.exec();
+            if (success) {
+                // Enregistrer l'historique de la suppression
+                enregistrerHistorique("Suppression d'un employe avec ID: " + QString::number(CIN));
+            }
+            return success;
 }
 
-bool Employe::supprimerCONG(int CIN)
+/*bool Employe::supprimerCONG(int CIN)
 {
     QSqlQuery query;
         query.prepare("UPDATE EMPLOYEE "
@@ -216,7 +234,19 @@ bool Employe::supprimerCONG(int CIN)
                       "WHERE CIN = :CIN");
         query.bindValue(":CIN", CIN);
         return query.exec();
+}*/
+
+bool Employe::supprimerCONG(int CIN) {
+    QSqlQuery query;
+    query.prepare("UPDATE EMPLOYEE SET LEAVE_TYPE = NULL, FIRST_DAY_OF_LEAVE = NULL, LAST_DAY_OF_LEAVE = NULL, NBDAYS = NULL WHERE CIN = :CIN");
+    query.bindValue(":CIN", CIN);
+    bool success = query.exec();
+    if (success) {
+        enregistrerHistoriqueCong("Deleted vacation leave for CIN " + QString::number(CIN));
+    }
+    return success;
 }
+
 
 QSqlQueryModel* Employe::afficherEMP()
 {
@@ -265,17 +295,24 @@ bool Employe::cinexiste(int CIN)
     }
 }
 bool Employe::Modifier() {
+    QSqlQuery query;
     QSqlDatabase db = QSqlDatabase::database();
     if (!db.isOpen()) {
-        qDebug() << "Database not open!";
+        /*qDebug() << "Database not open!";
         if (!db.open()) {
             qDebug() << "Failed to open database: " << db.lastError().text();
-            return false;
-        }
+            return false;*/
+        bool success = query.exec();
+                if (success) {
+                    // Enregistrer l'historique de la modification
+                    enregistrerHistorique("Modification d'un employe avec ID: " + QString::number(CIN));
+
+                return success;
+                }
     }
 
     // Prepare the update query
-    QSqlQuery query;
+
     query.prepare("UPDATE EMPLOYEE SET NOM_E = :NOM_E, PRENOM_E = :PRENOM_E, POST = :POST, "
                   "EMAIL = :EMAIL, TELEPHONE = :TELEPHONE, ADRESSE = :ADRESSE, LEAVE_TYPE = :LEAVE_TYPE, "
                   "FIRST_DAY_OF_LEAVE = :FIRST_DAY_OF_LEAVE, LAST_DAY_OF_LEAVE = :LAST_DAY_OF_LEAVE, NBDAYS = :NBDAYS "
@@ -449,6 +486,68 @@ void Employe::stat_bateau() {
     chartView->resize(1000, 500);
     chartView->show();
 }
+
+
+
+
+
+
+
+
+void Employe::enregistrerHistorique(const QString& operation) {
+    QFile file("C:\\Users\\MSI GP76\\OneDrive - ESPRIT\\Bureau\\employe.txt");
+
+    // Ouvrir le fichier en mode ajout
+    if (file.open(QIODevice::Append | QIODevice::Text)) {
+        QTextStream out(&file);
+        QString timestamp = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss");
+
+        // Écrire les informations dans le fichier
+        out << timestamp << " - " << operation << " - "
+            << "CIN: " << CIN << ", "
+            << "NOM_E: " << NOM_E << ", "
+               << "PRENOM_E: " << PRENOM_E << ", "
+            << "ADRESSE: " << ADRESSE << ", "
+            << "EMAIL: " << EMAIL << ", "
+            << "POST: " << POST << ", "
+            << "TELEPHONE: " << TELEPHONE << "," // Ajoutez d'autres attributs si nécessaire
+        << "LEAVE_TYPE: " << LEAVE_TYPE << ", "
+            << "NBDAYS: " << NBDAYS << "\n";
+        file.close();
+    } else {
+        qDebug() << "Impossible d'ouvrir le fichier historique pour écriture.";
+    }
+}
+
+
+void Employe::enregistrerHistoriqueCong(const QString& operation) {
+    QFile file("C:\\Users\\MSI GP76\\OneDrive - ESPRIT\\Bureau\\Cong.txt");
+
+    // Ouvrir le fichier en mode ajout
+    if (file.open(QIODevice::Append | QIODevice::Text)) {
+        QTextStream out(&file);
+        QString timestamp = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss");
+
+        // Écrire les informations dans le fichier
+        out << timestamp << " - " << operation << " - "
+            << "CIN: " << CIN << ", "
+            << "NOM_E: " << NOM_E << ", "
+               << "PRENOM_E: " << PRENOM_E << ", "
+            << "ADRESSE: " << ADRESSE << ", "
+            << "EMAIL: " << EMAIL << ", "
+            << "POST: " << POST << ", "
+            << "TELEPHONE: " << TELEPHONE << "," // Ajoutez d'autres attributs si nécessaire
+        << "LEAVE_TYPE: " << LEAVE_TYPE << ", "
+            << "NBDAYS: " << NBDAYS << "\n";
+        file.close();
+    } else {
+        qDebug() << "Impossible d'ouvrir le fichier historique pour écriture.";
+    }
+}
+
+
+
+
 
 
 
