@@ -61,6 +61,9 @@ public:
     void stat_bateau();
 
     QSqlQueryModel*afficherCon();
+    void enregistrerHistorique(const QString& operation);
+
+    void enregistrerHistoriqueCong(const QString& operation);
 
 private:
     int CIN;
