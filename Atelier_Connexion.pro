@@ -11,7 +11,7 @@ QT+=sql
 QT += serialport
 QT += network
 QT += core gui network
-
+QT += charts
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Atelier_Connexion
@@ -55,6 +55,150 @@ RESOURCES += \
     img.qrc
 
 DISTFILES += \
+    ../../Users/Asus/Downloads/add.png \
+    ../../Users/Asus/Downloads/bulb.png \
+    ../../Users/Asus/Downloads/delete.png \
+    ../../Users/Asus/Downloads/edit-button.png \
+    ../../Users/Asus/Downloads/envelope.png \
+    ../../Users/Asus/Downloads/export.png \
+    ../../Users/Asus/Downloads/idea.gif \
+    ../../Users/Asus/Downloads/led-light.png \
+    ../../Users/Asus/Downloads/man.png \
+    ../../Users/Asus/Downloads/person.png \
+    ../../Users/Asus/Downloads/pie-chart.png \
+    ../../Users/Asus/Downloads/pour zoro.zip \
+    ../../Users/Asus/Downloads/pour zoro.zip \
+    ../../Users/Asus/Downloads/pour zoro.zip \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/11.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/11.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/11.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/Sal.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/Sal.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/Sal.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/abri (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/abri (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/abri (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/abri.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/abri.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/abri.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/acc.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/acc.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/acc.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/acci.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/acci.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/acci.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/ajouter-un-bouton.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/ajouter-un-bouton.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/ajouter-un-bouton.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bg.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bg.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bg.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bgW.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bgW.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bgW.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/blue.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/blue.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/blue.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bouton-retour.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bouton-retour.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/bouton-retour.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/chercher.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/chercher.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/chercher.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/contact (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/contact (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/contact (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/contact.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/contact.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/contact.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/courrier.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/courrier.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/courrier.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/crudbg.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/crudbg.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/crudbg.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/deconnexion (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/deconnexion (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/deconnexion (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/deconnexion.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/deconnexion.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/deconnexion.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/diagramme-circulaire.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/diagramme-circulaire.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/diagramme-circulaire.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/emp.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/emp.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/emp.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/empCon.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/empCon.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/empCon.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/employes (2).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/employes (2).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/employes (2).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/employes.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/employes.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/employes.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/fichier.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/fichier.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/fichier.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/filtre.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/filtre.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/filtre.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/importer-exporter.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/importer-exporter.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/importer-exporter.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/listEmp.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/listEmp.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/listEmp.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/livraison-rapide (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/livraison-rapide (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/livraison-rapide (1).png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/log.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/log.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/log.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logB.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logB.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logB.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logistics-delivery.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logistics-delivery.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logistics-delivery.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logo.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logo.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logo.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logoG.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logoG.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/logoG.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/mettre-a-jour-les-fleches.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/mettre-a-jour-les-fleches.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/mettre-a-jour-les-fleches.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/picG.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/picG.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/picG.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/picP.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/picP.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/picP.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rech.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rech.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rech.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechCon.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechCon.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechCon.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechhh.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechhh.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechhh.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechsal.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechsal.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/rechsal.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/stat.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/stat.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/stat.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/supprimer.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/supprimer.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/supprimer.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/undo.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/undo.png \
+    ../../Users/Asus/Downloads/pour zoro/pour zoro/undo.png \
+    ../../Users/Asus/Downloads/tool.png \
     pour youssef/Sal.png \
     pour youssef/abri (1).png \
     pour youssef/abri.png \

@@ -1,6 +1,5 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "arduino.h"
 #include "livraison.h"
 #include<QSqlDatabase>
 #include <QMainWindow>
@@ -49,7 +48,14 @@
 #include <QSerialPortInfo>
 #include <QMainWindow>
 #include <QByteArray>
+#include <QMainWindow>
+#include <QPushButton>
+#include <QWidget>
 
+#include <QMainWindow>
+#include <QtCharts/QChartView>
+#include <QtCharts/QPieSeries>
+#include <QSqlQuery>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -79,8 +85,8 @@ void sendEmail(const QString &to, const QString &subject, const QString &body) ;
 // Slot pour la gestion du clic sur une date
 void onDateClicked(const QDate &date);
 void updateCalendar() ;
-
-
+void afficherLivraisonsStats();
+void fermerStatistiques();
 
 
 //////////////////////////////////////////////////////////////////////////////calendrier
@@ -92,6 +98,7 @@ void updateCalendar() ;
 void on_openDoorButton_clicked();   // Slot to open the door
 void on_closeDoorButton_clicked();  // Slot to close the door
 void readFromArduino();  // Slot to read data from Arduino
+void on_autoModeButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -102,19 +109,20 @@ private:
     // Méthode pour initialiser le calendrier
     QCalendarWidget *calendar;
     QLabel *noteLabel;
-    void afficherLivraisonsStats() ;
     void onTrierClicked();
     void afficherLivraisonsTriées(const QString& critere) ;
-
+    QPushButton *closeStatsButton;  // Bouton de fermeture
 
 //////////////////////arduino
  QSerialPort *serial;  // Serial port to communicate with Arduino
     QString arduinoPort;  // Port for Arduino connection
     bool isArduinoConnected;  // Flag to track Arduino connection status
+       bool isAutoMode = false; // Add this to your header or class definition
 
     void connectToArduino();  // Method to connect to Arduino
     void sendCommandToArduino(const QByteArray &command);  // Method to send commands to Arduino
 
+    QWidget *statsWindow; // Fenêtre pour afficher le graphique
 
 };
 

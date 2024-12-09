@@ -1,4 +1,4 @@
-#include "ui_mainwindow.h"
+ #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include <QDebug>
 #include "livraison.h"
@@ -13,7 +13,6 @@
 #include "mainwindow.h"
 #include <QStandardItemModel>
 #include <QStandardItem>
-
 #include <QtCore/QCoreApplication>
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkRequest>
@@ -24,7 +23,8 @@
 #include <QJsonDocument>
 #include <QUrl>
 #include <QSqlQuery>
-
+#include <QVBoxLayout>
+#include <QPushButton>
 // Constructor for MainWindow
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -32,7 +32,9 @@ MainWindow::MainWindow(QWidget *parent) :
     calendar(new QCalendarWidget(this)),
     noteLabel(new QLabel("Cliquez sur une date pour voir les détails.", this)),
     serial(new QSerialPort(this)),
-    isArduinoConnected(false)
+    isArduinoConnected(false),
+    statsWindow(nullptr)
+
 {
     ui->setupUi(this);
 
@@ -42,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent) :
     // Connect the button signals to the slots
     connect(ui->openDoorButton, &QPushButton::clicked, this, &MainWindow::on_openDoorButton_clicked);
         connect(ui->closeDoorButton, &QPushButton::clicked, this, &MainWindow::on_closeDoorButton_clicked);
+    connect(ui->autoModeButton, &QPushButton::clicked, this, &MainWindow::on_autoModeButton_clicked);
 
     // Read data from Arduino when it's available
     connect(serial, &QSerialPort::readyRead, this, &MainWindow::readFromArduino);
@@ -55,8 +58,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->boutonRechercher, SIGNAL(clicked()), this, SLOT(on_rechercher_clicked()));
     connect(ui->boutonExporterCSV, SIGNAL(clicked()), this, SLOT(exporterEnCSV()));
     connect(ui->sendEmailButton, SIGNAL(clicked()), this, SLOT(on_sendMailButton_clicked()));
-    connect(ui->pushButton_stats, &QPushButton::clicked, this, &MainWindow::afficherLivraisonsStats);
     connect(ui->boutonTri, &QPushButton::clicked, this, &MainWindow::onTrierClicked);
+    connect(ui->pushButton_stats, &QPushButton::clicked, this, &MainWindow::afficherLivraisonsStats);
 
 
     // Initialize QNetworkAccessManager
@@ -80,6 +83,102 @@ MainWindow::~MainWindow()
     delete ui;
 
 }
+
+
+void MainWindow::afficherLivraisonsStats()
+{
+    // Initialisation des variables
+    int totalLivraisons = 0;
+    int effectuees = 0;
+    int enRetard = 0;
+
+    // Récupération des données depuis la base de données
+    QSqlQuery query("SELECT DATE_PREVUE, DATE_EFFECTUEE FROM LIVRAISONS");
+    while (query.next()) {
+        QDate datePrevue = query.value("DATE_PREVUE").toDate();
+        QDate dateEffectuee = query.value("DATE_EFFECTUEE").toDate();
+
+        if (!dateEffectuee.isNull()) {
+            totalLivraisons++;
+            if (dateEffectuee <= datePrevue) {
+                effectuees++;
+            } else {
+                enRetard++;
+            }
+        }
+    }
+
+    // Gestion du cas où il n'y a aucune donnée
+    if (totalLivraisons == 0) {
+        QMessageBox::information(this, "Statistiques", "Aucune livraison trouvée.");
+        return;
+    }
+
+    // Création de la série pour le graphique en secteurs
+    QPieSeries *series = new QPieSeries();
+    series->append("Livraisons à temps", effectuees);
+    series->append("Livraisons en retard", enRetard);
+
+    // Personnalisation des sections du graphique
+    QPieSlice *sliceEffectuees = series->slices().at(0);
+    sliceEffectuees->setBrush(Qt::green);
+    sliceEffectuees->setLabelVisible();
+
+    QPieSlice *sliceRetard = series->slices().at(1);
+    sliceRetard->setBrush(Qt::red);
+    sliceRetard->setLabelVisible();
+
+    // Création du graphique
+    QChart *chart = new QChart();
+    chart->addSeries(series);
+    chart->setTitle("Statistiques des livraisons");
+    chart->setAnimationOptions(QChart::SeriesAnimations);
+
+    // Création de la vue pour afficher le graphique
+    QChartView *chartView = new QChartView(chart);
+    chartView->setRenderHint(QPainter::Antialiasing);
+
+    // Création de la fenêtre des statistiques
+    statsWindow = new QWidget();
+    statsWindow->setWindowTitle("Statistiques des Livraisons");
+    statsWindow->resize(600, 500);
+
+    QVBoxLayout *layout = new QVBoxLayout(statsWindow);
+
+    // Ajout du graphique au layout
+    layout->addWidget(chartView);
+
+    // Affichage des valeurs sous le graphique
+    QString details = QString(
+                          "Total des livraisons : %1\n"
+                          "Livraisons effectuées à temps : %2\n"
+                          "Livraisons en retard : %3")
+                          .arg(totalLivraisons)
+                          .arg(effectuees)
+                          .arg(enRetard);
+
+    QLabel *detailsLabel = new QLabel(details);
+    detailsLabel->setAlignment(Qt::AlignCenter);
+    detailsLabel->setStyleSheet("font-size: 14px; color: black;");
+    layout->addWidget(detailsLabel);
+
+    // Bouton pour fermer la fenêtre
+    QPushButton *closeButton = new QPushButton("Fermer");
+    closeButton->setStyleSheet("padding: 10px; font-size: 14px; color: white; background-color: #007BFF;");
+    connect(closeButton, &QPushButton::clicked, statsWindow, &QWidget::close);
+    layout->addWidget(closeButton);
+
+    statsWindow->setLayout(layout);
+    statsWindow->show();
+}
+void MainWindow::fermerStatistiques()
+{
+    if (statsWindow) {
+        statsWindow->close();
+        delete statsWindow;
+        statsWindow = nullptr;
+    }
+}
 void MainWindow::connectToArduino()
 {
     foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
@@ -101,18 +200,37 @@ void MainWindow::connectToArduino()
     ui->connectionStatusLabel->setText("Failed to connect to Arduino");
 }
 
-
 void MainWindow::on_openDoorButton_clicked()
 {
     if (isArduinoConnected) {
-        sendCommandToArduino("OPEN");
+        isAutoMode = false; // Set to manual mode
+        sendCommandToArduino("OPEN\n"); // Send "OPEN" to Arduino
+        ui->connectionStatusLabel->setText("Command sent: OPEN");
+    } else {
+        ui->connectionStatusLabel->setText("Arduino not connected.");
     }
 }
 
 void MainWindow::on_closeDoorButton_clicked()
 {
     if (isArduinoConnected) {
-        sendCommandToArduino("CLOSE");
+        isAutoMode = false; // Set to manual mode
+        sendCommandToArduino("CLOSE\n"); // Send "CLOSE" to Arduino
+        ui->connectionStatusLabel->setText("Command sent: CLOSE");
+    } else {
+        ui->connectionStatusLabel->setText("Arduino not connected.");
+    }
+}
+
+
+void MainWindow::on_autoModeButton_clicked()
+{
+    if (isArduinoConnected) {
+        isAutoMode = true; // Set to automatic mode
+        sendCommandToArduino("AUTO\n"); // Send "AUTO" to Arduino
+        ui->connectionStatusLabel->setText("Switched to Automatic Mode");
+    } else {
+        ui->connectionStatusLabel->setText("Arduino not connected.");
     }
 }
 
@@ -123,14 +241,28 @@ void MainWindow::sendCommandToArduino(const QByteArray &command)
         qDebug() << "Sent to Arduino:" << command;
     }
 }
-
 void MainWindow::readFromArduino()
 {
     QByteArray data = serial->readAll();
     QString distanceData = QString(data);
-    ui->distanceTextEdit->setPlainText("Distance: " + distanceData);
+
+    if (isAutoMode) {
+        // Update distanceTextEdit only in automatic mode
+        ui->distanceTextEdit->setText(distanceData);
+        qDebug() << "Auto Mode: Displayed distance:" << distanceData;
+    } else {
+        // Clear distanceTextEdit in manual mode
+        ui->distanceTextEdit->clear();
+        qDebug() << "Manual Mode: Cleared distance label.";
+    }
+
+    qDebug() << "Received from Arduino:" << distanceData;
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////////arduino
+///
+///
 void MainWindow::on_pushButton_ajouter_clicked()
 {
     // Récupération des informations saisies
@@ -254,7 +386,6 @@ void MainWindow::afficherLivraisons() {
 
 
 
-
 void MainWindow::on_modifier_Clicked()
 {
     // Récupérer l'ID de la livraison à modifier
@@ -362,56 +493,6 @@ void MainWindow::exporterEnCSV() {
         QMessageBox::information(this, "Exportation réussie", "Les données ont été exportées avec succès en CSV.");
     }
 }
-
-
-void MainWindow::afficherLivraisonsStats()
-{
-    // Initialisation des compteurs
-    int totalLivraisons = 0;
-    int effectuees = 0;
-    int enRetard = 0;
-
-    // Requête SQL pour récupérer les livraisons avec les dates prévues et effectives
-    QSqlQuery query("SELECT DATE_PREVUE, DATE_EFFECTUEE FROM LIVRAISONS");
-    while (query.next()) {
-        QDate datePrevue = query.value("DATE_PREVUE").toDate();
-        QDate dateEffectuee = query.value("DATE_EFFECTUEE").toDate();
-
-        // Vérifier si la livraison est effectuée à temps ou en retard
-        if (!dateEffectuee.isNull()) {  // Si la livraison a été effectuée
-            totalLivraisons++;
-            if (dateEffectuee <= datePrevue) {
-                effectuees++;  // Livraison effectuée à temps
-            } else {
-                enRetard++;  // Livraison en retard
-            }
-        }
-    }
-
-    // Si aucune livraison n'a été trouvée
-    if (totalLivraisons == 0) {
-        ui->statistiquesLabel->setText("Aucune livraison trouvée.");
-        return;
-    }
-
-    // Calcul des pourcentages
-    float pourcentageLivraisonsEffectuees = (effectuees * 100.0) / totalLivraisons;
-    float pourcentageLivraisonsEnRetard = (enRetard * 100.0) / totalLivraisons;
-
-    // Format the message using QString::number()
-    QString message = "Livraisons effectuées à temps : " + QString::number(pourcentageLivraisonsEffectuees, 'f', 2) + "%, "
-                      + "Livraisons en retard : " + QString::number(pourcentageLivraisonsEnRetard, 'f', 2) + "%";
-
-    // Personnalisation du texte du QLabel avec la couleur et la taille
-    ui->statistiquesLabel->setText(message);
-
-    // Appliquer un style pour changer la couleur du texte et agrandir la taille de la police
-    ui->statistiquesLabel->setStyleSheet("color: blue; font-size: 18px; font-weight: bold;");
-
-    // Si vous voulez aussi un fond coloré pour le label
-    ui->statistiquesLabel->setStyleSheet("color: blue; font-size: 14px; font-weight: bold; background-color: lightyellow; padding: 5px;");
-}
-
 
 
 

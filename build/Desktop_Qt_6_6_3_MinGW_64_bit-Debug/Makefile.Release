@@ -13,13 +13,13 @@ EQ            = =
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
+DEFINES       = -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_OPENGLWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra $(DEFINES)
 CXXFLAGS      = -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I../../../Atelier_Connexion -I. -I../../../../Qt/6.6.3/mingw_64/include -I../../../../Qt/6.6.3/mingw_64/include/QtWidgets -I../../../../Qt/6.6.3/mingw_64/include/QtGui -I../../../../Qt/6.6.3/mingw_64/include/QtNetwork -I../../../../Qt/6.6.3/mingw_64/include/QtSql -I../../../../Qt/6.6.3/mingw_64/include/QtSerialPort -I../../../../Qt/6.6.3/mingw_64/include/QtCore -Irelease -I. -I/include -I../../../../Qt/6.6.3/mingw_64/mkspecs/win32-g++ 
+INCPATH       = -I../../../Atelier_Connexion -I. -I../../../../Qt/6.6.3/mingw_64/include -I../../../../Qt/6.6.3/mingw_64/include/QtCharts -I../../../../Qt/6.6.3/mingw_64/include/QtOpenGLWidgets -I../../../../Qt/6.6.3/mingw_64/include/QtWidgets -I../../../../Qt/6.6.3/mingw_64/include/QtOpenGL -I../../../../Qt/6.6.3/mingw_64/include/QtGui -I../../../../Qt/6.6.3/mingw_64/include/QtNetwork -I../../../../Qt/6.6.3/mingw_64/include/QtSql -I../../../../Qt/6.6.3/mingw_64/include/QtSerialPort -I../../../../Qt/6.6.3/mingw_64/include/QtCore -Irelease -I. -I/include -I../../../../Qt/6.6.3/mingw_64/mkspecs/win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-s -Wl,-subsystem,windows -mthreads
-LIBS        =        C:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a C:\Qt\6.6.3\mingw_64\lib\libQt6Gui.a C:\Qt\6.6.3\mingw_64\lib\libQt6Network.a C:\Qt\6.6.3\mingw_64\lib\libQt6Sql.a C:\Qt\6.6.3\mingw_64\lib\libQt6SerialPort.a C:\Qt\6.6.3\mingw_64\lib\libQt6Core.a -lmingw32 C:\Qt\6.6.3\mingw_64\lib\libQt6EntryPoint.a -lshell32  
+LIBS        =        C:\Qt\6.6.3\mingw_64\lib\libQt6Charts.a C:\Qt\6.6.3\mingw_64\lib\libQt6OpenGLWidgets.a C:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a C:\Qt\6.6.3\mingw_64\lib\libQt6OpenGL.a C:\Qt\6.6.3\mingw_64\lib\libQt6Gui.a C:\Qt\6.6.3\mingw_64\lib\libQt6Network.a C:\Qt\6.6.3\mingw_64\lib\libQt6Sql.a C:\Qt\6.6.3\mingw_64\lib\libQt6SerialPort.a C:\Qt\6.6.3\mingw_64\lib\libQt6Core.a -lmingw32 C:\Qt\6.6.3\mingw_64\lib\libQt6EntryPoint.a -lshell32  
 QMAKE         = C:\Qt\6.6.3\mingw_64\bin\qmake.exe
 DEL_FILE      = del
 CHK_DIR_EXISTS= if not exist
@@ -64,7 +64,427 @@ OBJECTS       = release/arduino.o \
 		release/qrc_img.o \
 		release/moc_mainwindow.o
 
-DIST          = pour \
+DIST          = ../../Users/Asus/Downloads/add.png \
+		../../Users/Asus/Downloads/bulb.png \
+		../../Users/Asus/Downloads/delete.png \
+		../../Users/Asus/Downloads/edit-button.png \
+		../../Users/Asus/Downloads/envelope.png \
+		../../Users/Asus/Downloads/export.png \
+		../../Users/Asus/Downloads/idea.gif \
+		../../Users/Asus/Downloads/led-light.png \
+		../../Users/Asus/Downloads/man.png \
+		../../Users/Asus/Downloads/person.png \
+		../../Users/Asus/Downloads/pie-chart.png \
+		../../Users/Asus/Downloads/pour \
+		zoro.zip \
+		../../Users/Asus/Downloads/pour \
+		zoro.zip \
+		../../Users/Asus/Downloads/pour \
+		zoro.zip \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/11.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/11.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/11.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/Sal.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/Sal.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/Sal.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/abri \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/abri \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/abri \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/abri.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/abri.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/abri.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/acc.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/acc.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/acc.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/acci.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/acci.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/acci.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/ajouter-un-bouton.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/ajouter-un-bouton.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/ajouter-un-bouton.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bg.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bg.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bg.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bgW.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bgW.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bgW.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/blue.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/blue.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/blue.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bouton-retour.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bouton-retour.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/bouton-retour.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/chercher.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/chercher.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/chercher.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/contact \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/contact \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/contact \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/contact.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/contact.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/contact.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/courrier.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/courrier.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/courrier.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/crudbg.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/crudbg.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/crudbg.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/deconnexion \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/deconnexion \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/deconnexion \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/deconnexion.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/deconnexion.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/deconnexion.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/diagramme-circulaire.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/diagramme-circulaire.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/diagramme-circulaire.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/emp.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/emp.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/emp.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/empCon.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/empCon.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/empCon.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/employes \
+		(2).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/employes \
+		(2).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/employes \
+		(2).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/employes.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/employes.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/employes.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/fichier.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/fichier.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/fichier.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/filtre.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/filtre.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/filtre.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/importer-exporter.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/importer-exporter.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/importer-exporter.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/listEmp.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/listEmp.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/listEmp.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/livraison-rapide \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/livraison-rapide \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/livraison-rapide \
+		(1).png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/log.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/log.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/log.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logB.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logB.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logB.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logistics-delivery.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logistics-delivery.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logistics-delivery.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logo.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logo.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logo.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logoG.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logoG.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/logoG.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/mettre-a-jour-les-fleches.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/mettre-a-jour-les-fleches.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/mettre-a-jour-les-fleches.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/picG.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/picG.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/picG.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/picP.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/picP.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/picP.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rech.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rech.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rech.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechCon.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechCon.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechCon.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechhh.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechhh.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechhh.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechsal.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechsal.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/rechsal.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/stat.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/stat.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/stat.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/supprimer.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/supprimer.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/supprimer.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/undo.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/undo.png \
+		../../Users/Asus/Downloads/pour \
+		zoro/pour \
+		zoro/undo.png \
+		../../Users/Asus/Downloads/tool.png \
+		pour \
 		youssef/Sal.png \
 		pour \
 		youssef/abri \
@@ -139,7 +559,7 @@ DESTDIR_TARGET = release\Atelier_Connexion.exe
 first: all
 all: Makefile.Release  release/Atelier_Connexion.exe
 
-release/Atelier_Connexion.exe: C:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a C:/Qt/6.6.3/mingw_64/lib/libQt6Gui.a C:/Qt/6.6.3/mingw_64/lib/libQt6Network.a C:/Qt/6.6.3/mingw_64/lib/libQt6Sql.a C:/Qt/6.6.3/mingw_64/lib/libQt6SerialPort.a C:/Qt/6.6.3/mingw_64/lib/libQt6Core.a C:/Qt/6.6.3/mingw_64/lib/libQt6EntryPoint.a ui_mainwindow.h $(OBJECTS) 
+release/Atelier_Connexion.exe: C:/Qt/6.6.3/mingw_64/lib/libQt6Charts.a C:/Qt/6.6.3/mingw_64/lib/libQt6OpenGLWidgets.a C:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a C:/Qt/6.6.3/mingw_64/lib/libQt6OpenGL.a C:/Qt/6.6.3/mingw_64/lib/libQt6Gui.a C:/Qt/6.6.3/mingw_64/lib/libQt6Network.a C:/Qt/6.6.3/mingw_64/lib/libQt6Sql.a C:/Qt/6.6.3/mingw_64/lib/libQt6SerialPort.a C:/Qt/6.6.3/mingw_64/lib/libQt6Core.a C:/Qt/6.6.3/mingw_64/lib/libQt6EntryPoint.a ui_mainwindow.h $(OBJECTS) 
 	$(LINKER) $(LFLAGS) -o $(DESTDIR_TARGET) $(OBJECTS) $(LIBS)
 
 qmake: FORCE
@@ -148,7 +568,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) Atelier_Connexion.zip $(SOURCES) $(DIST) ..\..\..\..\Atelier_Connexion.pro ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\spec_pre.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\device_config.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\sanitize.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\gcc-base.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\g++-base.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\windows-vulkan.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\g++-win32.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\windows-desktop.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\qconfig.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_ext_freetype.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_ext_libjpeg.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_ext_libpng.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3danimation.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3danimation_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dcore.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dextras.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dextras_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dinput.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dlogic.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickanimation.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickextras.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickextras_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickscene2d.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3drender.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3drender_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_activeqt.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_activeqt_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_bodymovin_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_charts.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_charts_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_chartsqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_chartsqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_core.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_core5compat.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_core5compat_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_datavisualization.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_datavisualization_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_datavisualizationqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_datavisualizationqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_example_icons_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_freetype_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_graphs.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_graphs_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_grpc.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_grpc_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_harfbuzz_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_help.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_httpserver.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_httpserver_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_insighttracker.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_insighttracker_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_insighttrackerqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_insighttrackerqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_jpeg_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_jsonrpc_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labssettings.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_languageserver_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_linguist.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_linguist_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_location.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimediaquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_network.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_networkauth.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_networkauth_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdf.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdf_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdfquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdfquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdfwidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdfwidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_png_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_positioningquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_positioningquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobuf.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobuf_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufqtcoretypes.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufqtcoretypes_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufqtguitypes.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufqtguitypes_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufwellknowntypes.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufwellknowntypes_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatch_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatchconversionsprivate.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatchconversionsprivate_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatchgeneratorsprivate.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatchgeneratorsprivate_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlcompiler.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlintegration.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlintegration_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlls_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmltoolingsettings_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3d.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3d_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3deffects.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3deffects_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dglslparser_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticles.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticles_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysics.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysics_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysicshelpers.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysicshelpers_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dspatialaudio_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dutils.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dutils_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickeffects_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktimeline.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktimeline_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_remoteobjects.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_remoteobjects_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_remoteobjectsqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_remoteobjectsqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_repparser.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_repparser_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_scxml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_scxml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_scxmlqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_scxmlqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sensorsquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sensorsquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_serialbus.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_shadertools.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_shadertools_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_spatialaudio.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_spatialaudio_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_statemachine.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_statemachine_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_statemachineqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_statemachineqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_texttospeech.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_texttospeech_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_tools_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboard.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboardsettings.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboardsettings_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webchannelquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webchannelquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webview.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webview_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webviewquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webviewquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qt_functions.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qt_config.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\win32-g++\qmake.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\spec_post.prf .qmake.stash ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\exclusive_builds.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\toolchain.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\default_pre.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\win32\default_pre.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\resolve_config.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\default_post.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\build_pass.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qml_debug.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\precompile_header.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\warn_on.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\permissions.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qt.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\resources_functions.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\resources.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\moc.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\win32\opengl.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\uic.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qmake_use.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\file_copies.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\win32\windows.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\testcase_targets.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\exceptions.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\yacc.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\lex.prf ..\..\Atelier_Connexion.pro ..\..\img.qrc ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Widgets.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Gui.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Network.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Sql.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6SerialPort.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Core.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6EntryPoint.prl   ..\..\img.qrc ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\data\dummy.cpp ..\..\arduino.h ..\..\livraison.h ..\..\mainwindow.h ..\..\connection.h  ..\..\arduino.cpp ..\..\livraison.cpp ..\..\main.cpp ..\..\mainwindow.cpp ..\..\connection.cpp ..\..\mainwindow.ui    
+	$(ZIP) Atelier_Connexion.zip $(SOURCES) $(DIST) ..\..\..\..\Atelier_Connexion.pro ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\spec_pre.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\device_config.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\sanitize.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\gcc-base.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\g++-base.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\windows-vulkan.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\g++-win32.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\common\windows-desktop.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\qconfig.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_ext_freetype.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_ext_libjpeg.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_ext_libpng.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3danimation.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3danimation_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dcore.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dextras.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dextras_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dinput.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dlogic.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickanimation.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickextras.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickextras_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickscene2d.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3drender.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_3drender_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_activeqt.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_activeqt_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_bodymovin_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_charts.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_charts_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_chartsqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_chartsqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_core.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_core5compat.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_core5compat_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_datavisualization.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_datavisualization_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_datavisualizationqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_datavisualizationqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_example_icons_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_freetype_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_graphs.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_graphs_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_grpc.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_grpc_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_harfbuzz_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_help.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_httpserver.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_httpserver_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_insighttracker.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_insighttracker_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_insighttrackerqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_insighttrackerqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_jpeg_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_jsonrpc_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labssettings.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_languageserver_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_linguist.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_linguist_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_location.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimediaquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_network.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_networkauth.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_networkauth_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdf.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdf_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdfquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdfquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdfwidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_pdfwidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_png_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_positioningquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_positioningquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobuf.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobuf_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufqtcoretypes.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufqtcoretypes_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufqtguitypes.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufqtguitypes_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufwellknowntypes.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_protobufwellknowntypes_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatch_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatchconversionsprivate.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatchconversionsprivate_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatchgeneratorsprivate.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qdoccatchgeneratorsprivate_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlcompiler.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlintegration.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlintegration_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlls_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmltoolingsettings_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3d.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3d_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3deffects.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3deffects_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dglslparser_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticles.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticles_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysics.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysics_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysicshelpers.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysicshelpers_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dspatialaudio_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dutils.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick3dutils_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickeffects_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktimeline.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quicktimeline_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_remoteobjects.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_remoteobjects_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_remoteobjectsqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_remoteobjectsqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_repparser.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_repparser_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_scxml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_scxml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_scxmlqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_scxmlqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sensorsquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sensorsquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_serialbus.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_shadertools.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_shadertools_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_spatialaudio.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_spatialaudio_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_statemachine.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_statemachine_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_statemachineqml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_statemachineqml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_texttospeech.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_texttospeech_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_tools_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboard.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboardsettings.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboardsettings_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webchannelquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webchannelquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webview.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webview_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webviewquick.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_webviewquick_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qt_functions.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qt_config.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\win32-g++\qmake.conf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\spec_post.prf .qmake.stash ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\exclusive_builds.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\toolchain.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\default_pre.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\win32\default_pre.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\resolve_config.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\default_post.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\build_pass.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qml_debug.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\precompile_header.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\warn_on.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\permissions.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qt.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\resources_functions.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\resources.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\moc.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\win32\opengl.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\uic.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\qmake_use.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\file_copies.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\win32\windows.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\testcase_targets.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\exceptions.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\yacc.prf ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\lex.prf ..\..\Atelier_Connexion.pro ..\..\img.qrc ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Charts.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6OpenGLWidgets.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Widgets.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6OpenGL.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Gui.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Network.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Sql.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6SerialPort.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6Core.prl ..\..\..\..\Qt\6.6.3\mingw_64\lib\Qt6EntryPoint.prl   ..\..\img.qrc ..\..\..\..\Qt\6.6.3\mingw_64\mkspecs\features\data\dummy.cpp ..\..\arduino.h ..\..\livraison.h ..\..\mainwindow.h ..\..\connection.h  ..\..\arduino.cpp ..\..\livraison.cpp ..\..\main.cpp ..\..\mainwindow.cpp ..\..\connection.cpp ..\..\mainwindow.ui    
 
 clean: compiler_clean 
 	-$(DEL_FILE) release\arduino.o release\livraison.o release\main.o release\mainwindow.o release\connection.o release\qrc_img.o release\moc_mainwindow.o
@@ -199,7 +619,23 @@ release/qrc_img.cpp: ../../img.qrc \
 		../../pour\ youssef/bgW.png \
 		../../pour\ youssef/rechsal.png \
 		../../pour\ youssef/bg.png \
-		../../pour\ youssef/abri\ (1).png
+		../../pour\ youssef/abri\ (1).png \
+		../../../../Users/Asus/Downloads/man.png \
+		../../../../Users/Asus/Downloads/led-light.png \
+		../../../../Users/Asus/Downloads/delete.png \
+		../../../../Users/Asus/Downloads/edit-button.png \
+		../../../../Users/Asus/Downloads/plus.png \
+		../../../../Users/Asus/Downloads/searcch.png \
+		../../../../Users/Asus/Downloads/export.png \
+		../../../../Users/Asus/Downloads/envelope.png \
+		../../../../Users/Asus/Downloads/bulb.png \
+		../../../../Users/Asus/Downloads/add.png \
+		../../../../Users/Asus/Downloads/idea.gif \
+		../../../../Users/Asus/Downloads/minus.png \
+		../../../../Users/Asus/Downloads/pie-chart.png \
+		../../../../Users/Asus/Downloads/auto-flash.png \
+		../../../../Users/Asus/Downloads/tool.png \
+		../../../../Users/Asus/Downloads/person.png
 	C:\Qt\6.6.3\mingw_64\bin\rcc.exe -name img --no-zstd ..\..\img.qrc -o release\qrc_img.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -635,19 +1071,58 @@ release/moc_mainwindow.cpp: ../../mainwindow.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/qudpsocket.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/QNetworkReply \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonArray \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QFile \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonObject \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonDocument \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/QTcpSocket \
-		../../arduino.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QTextCharFormat \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QCalendarWidget \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qcalendarwidget.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qlabel.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QTableWidget \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPort \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialport.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialportglobal.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChartView \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchartview.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QAbstractAxis \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qabstractaxis.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChartGlobal \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchartglobal.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qtcharts-config.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qtchartsexports.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QPen \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QFont \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QAbstractSeries \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qabstractseries.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChart \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchart.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QLegend \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qlegend.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QGraphicsWidget \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicswidget.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpainterpath.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QBrush \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QMargins \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QGraphicsView \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsview.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qscrollarea.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QPieSeries \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qpieseries.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QPieSlice \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qpieslice.h \
 		release/moc_predefs.h \
 		../../../../Qt/6.6.3/mingw_64/bin/moc.exe
-	C:\Qt\6.6.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/prjt/Atelier_Connexion/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -IC:/prjt/Atelier_Connexion -IC:/Qt/6.6.3/mingw_64/include -IC:/Qt/6.6.3/mingw_64/include/QtWidgets -IC:/Qt/6.6.3/mingw_64/include/QtGui -IC:/Qt/6.6.3/mingw_64/include/QtNetwork -IC:/Qt/6.6.3/mingw_64/include/QtSql -IC:/Qt/6.6.3/mingw_64/include/QtSerialPort -IC:/Qt/6.6.3/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\6.6.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/prjt/Atelier_Connexion/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -IC:/prjt/Atelier_Connexion -IC:/Qt/6.6.3/mingw_64/include -IC:/Qt/6.6.3/mingw_64/include/QtCharts -IC:/Qt/6.6.3/mingw_64/include/QtOpenGLWidgets -IC:/Qt/6.6.3/mingw_64/include/QtWidgets -IC:/Qt/6.6.3/mingw_64/include/QtOpenGL -IC:/Qt/6.6.3/mingw_64/include/QtGui -IC:/Qt/6.6.3/mingw_64/include/QtNetwork -IC:/Qt/6.6.3/mingw_64/include/QtSql -IC:/Qt/6.6.3/mingw_64/include/QtSerialPort -IC:/Qt/6.6.3/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\mainwindow.h -o release\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -673,9 +1148,10 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 release/arduino.o: ../../arduino.cpp ../../arduino.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPort \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialport.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qiodevice.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QObject \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qobject.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qobjectdefs.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qnamespace.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qglobal.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qtversionchecks.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qtconfiginclude.h \
@@ -719,10 +1195,6 @@ release/arduino.o: ../../arduino.cpp ../../arduino.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qtresource.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qttranslation.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qiodevicebase.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qobject.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qobjectdefs.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qnamespace.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qtmetamacros.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qfunctionaltools_impl.h \
@@ -762,6 +1234,7 @@ release/arduino.o: ../../arduino.cpp ../../arduino.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qmetatype.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qcompare.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qdatastream.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qiodevicebase.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qfloat16.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qmath.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qiterable.h \
@@ -771,23 +1244,82 @@ release/arduino.o: ../../arduino.cpp ../../arduino.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qscopeguard.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qobject_impl.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qbindingstorage.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPort \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialport.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qiodevice.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialportglobal.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialportinfo.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QDebug \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qmargins.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/q23utility.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qicon.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qsize.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qrect.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qrgb.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qshareddata.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qimage.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qtransform.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpolygon.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qregion.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qline.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qdebug.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qtextstream.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qstringconverter_base.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qcontiguouscache.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qsharedpointer.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qshareddata.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qmap.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qshareddata_impl.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qset.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qhash.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpalette.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qfont.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qfontmetrics.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qfontinfo.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qcursor.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qevent.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qpointer.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qurl.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qeventpoint.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qvector2d.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qvectornd.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpointingdevice.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qinputdevice.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qscreen.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QList \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QRect \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QSize \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QSizeF \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QTransform \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\arduino.o ..\..\arduino.cpp
 
 release/livraison.o: ../../livraison.cpp ../../livraison.h \
@@ -1351,17 +1883,57 @@ release/main.o: ../../main.cpp ../../../../../../Qt/6.6.3/mingw_64/include/QtWid
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/qudpsocket.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/QNetworkReply \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonArray \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QFile \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonObject \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonDocument \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/QTcpSocket \
-		../../arduino.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QTextCharFormat \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QCalendarWidget \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qcalendarwidget.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qlabel.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QTableWidget \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPort \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialport.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialportglobal.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialportinfo.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QCoreApplication
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChartView \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchartview.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QAbstractAxis \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qabstractaxis.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChartGlobal \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchartglobal.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qtcharts-config.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qtchartsexports.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QPen \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QFont \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QAbstractSeries \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qabstractseries.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChart \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchart.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QLegend \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qlegend.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QGraphicsWidget \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicswidget.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpainterpath.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QBrush \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QMargins \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QGraphicsView \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsview.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qscrollarea.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QPieSeries \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qpieseries.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QPieSlice \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qpieslice.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QCoreApplication \
+		../../arduino.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\main.cpp
 
 release/mainwindow.o: ../../mainwindow.cpp ui_mainwindow.h \
@@ -1586,9 +2158,6 @@ release/mainwindow.o: ../../mainwindow.cpp ui_mainwindow.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qtextformat.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QListWidget \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qlistwidget.h \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qlistview.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
@@ -1823,20 +2392,57 @@ release/mainwindow.o: ../../mainwindow.cpp ui_mainwindow.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/qudpsocket.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/QNetworkReply \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonArray \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QFile \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonObject \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QJsonDocument \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtNetwork/QTcpSocket \
-		../../arduino.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QTextCharFormat \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPort \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialport.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialportglobal.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChartView \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchartview.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QAbstractAxis \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qabstractaxis.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChartGlobal \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchartglobal.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qtcharts-config.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qtchartsexports.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QPen \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QFont \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QAbstractSeries \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qabstractseries.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QChart \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qchart.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QLegend \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qlegend.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QGraphicsWidget \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicswidget.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qpainterpath.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QBrush \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QMargins \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QGraphicsView \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsview.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qscrollarea.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QPieSeries \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qpieseries.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/QPieSlice \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCharts/qpieslice.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QStandardItemModel \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/qstandarditemmodel.h \
 		../../../../../../Qt/6.6.3/mingw_64/include/QtGui/QStandardItem \
-		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QCoreApplication
+		../../../../../../Qt/6.6.3/mingw_64/include/QtCore/QCoreApplication \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/QVBoxLayout \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qboxlayout.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qlayout.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+		../../../../../../Qt/6.6.3/mingw_64/include/QtWidgets/qgridlayout.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\..\mainwindow.cpp
 
 release/connection.o: ../../connection.cpp ../../connection.h \
