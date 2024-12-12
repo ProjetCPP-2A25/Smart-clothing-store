@@ -1,0 +1,24 @@
+
+2024-12-10 14:34:37 - Modifié - ID: 23435436, Nom: R, Quantité: 4333, Prix: 345678, Marque: ASSSSRE
+2024-12-10 14:34:44 - Supprimé - ID: 0, Nom: , Quantité: 0, Prix: 0, Marque: 
+2024-12-10 14:40:18 - Modifié - ID: 12, Nom: zorobogoss, Quantité: 4, Prix: 35, Marque: bohmidzpro
+2024-12-10 14:41:45 - Modifié - ID: 12, Nom: zorobogoss, Quantité: 4, Prix: 3, Marque: bohmidzpro
+2024-12-10 14:45:58 - Modifié - ID: 12, Nom: eya, Quantité: 4, Prix: 3, Marque: bohmidzpro
+2024-12-10 15:17:02 - Supprimé - ID: 0, Nom: , Quantité: 0, Prix: 0, Marque: 
+2024-12-10 15:18:11 - Ajouté - ID: 2134, Nom: FEGV, Quantité: 34, Prix: 123, Marque: ZDFGRHEREG
+2024-12-10 15:18:18 - Supprimé - ID: 0, Nom: , Quantité: 0, Prix: 0, Marque: 
+2024-12-10 15:18:47 - Ajouté - ID: 324, Nom: DED, Quantité: 2323, Prix: 2, Marque: EFC
+2024-12-10 15:19:04 - Modifié - ID: 12345, Nom: zara, Quantité: 100, Prix: 200, Marque: vetement
+2024-12-10 15:19:18 - Modifié - ID: 32, Nom: DED, Quantité: 2323, Prix: 2, Marque: EFC
+2024-12-10 15:19:42 - Modifié - ID: 324, Nom: DEDA, Quantité: 2323, Prix: 2, Marque: EFC
+2024-12-12 23:16:10 - Modifié - ID: 32, Nom: Robe d'été, Quantité: 23, Prix: 50, Marque: Zara
+2024-12-12 23:16:18 - Modifié - ID: 324, Nom: DEDA, Quantité: 2323, Prix: 2, Marque: EFC
+2024-12-12 23:16:26 - Modifié - ID: 324, Nom: DEDA, Quantité: 2323, Prix: 2, Marque: EFC
+2024-12-12 23:16:57 - Modifié - ID: 324, Nom: Robe d'ete, Quantité: 40, Prix: 50, Marque: Zara
+2024-12-12 23:17:09 - Supprimé - ID: 0, Nom: , Quantité: 0, Prix: 0, Marque: 
+2024-12-12 23:17:14 - Supprimé - ID: 0, Nom: , Quantité: 0, Prix: 0, Marque: 
+2024-12-12 23:17:47 - Modifié - ID: 25, Nom: Jeans slim , Quantité: 30, Prix: 70, Marque: Levi's
+2024-12-12 23:19:03 - Modifié - ID: 43, Nom: Blouse, Quantité: 90, Prix: 30, Marque: Mango
+2024-12-12 23:19:25 - Modifié - ID: 43, Nom: Blouse en lin, Quantité: 90, Prix: 30, Marque: Mango
+2024-12-12 23:20:24 - Modifié - ID: 12, Nom: Robe d'ete, Quantité: 70, Prix: 40, Marque: Zara
+2024-12-12 23:21:58 - Ajouté - ID: 15, Nom: Veste en cuir, Quantité: 15, Prix: 150, Marque: Hugo Boss

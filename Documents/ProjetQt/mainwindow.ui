@@ -1,0 +1,2404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1559</width>
+    <height>843</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1561</width>
+      <height>841</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="Homeprod">
+     <attribute name="title">
+      <string>Home prod</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1551</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/bg.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>1311</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/bgW.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>161</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>450</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/blue.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>460</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#ffe6dc;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;</string>
+      </property>
+      <property name="text">
+       <string>  Stock</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>imgs/logostock.jpg</normaloff>imgs/logostock.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/undo.png</normaloff>:/resources/imgs/undo.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>80</y>
+        <width>421</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/stat.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="statisticsBtn">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>261</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#statisticsBtn {
+    color: #000c5e; /* Default text color */
+    font-size: 30px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#statisticsBtn:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#statisticsBtn:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}</string>
+      </property>
+      <property name="text">
+       <string>Statistics</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/diagramme-circulaire.png</normaloff>:/resources/imgs/diagramme-circulaire.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>380</y>
+        <width>421</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font-size: 35px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/stat.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stat">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>460</y>
+        <width>261</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#stat {
+    color: #000c5e; /* Default text color */
+    font-size: 30px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#stat:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#stat:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string> Statistics </string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/diagramme-circulaire.png</normaloff>:/resources/imgs/diagramme-circulaire.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>80</y>
+        <width>921</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/Sal.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_2">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>270</y>
+        <width>831</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView {
+    background-color: white;
+    color: #333333;
+    border: none;
+    selection-background-color: #c0e4f7;
+}
+
+QTableView::item {
+    padding: 8px;
+}
+
+QTableView::item:selected {
+    background-color: #eeeeee;
+    color: black;
+    font-family: Arial;
+}
+
+QHeaderView::section {
+    background-color: #000c5e  ; /* Changed to the new color */
+    color: #e5c7bd; /* Changed font color */
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px;
+    border: none;
+}
+
+QTableView::horizontalHeader {
+    background-color: #000c5e  ; /* Changed to the new color */
+    color: #e5c7bd; /* Changed font color */
+    padding: 8px; /* Ensures padding is consistent */
+}
+
+QTableView::verticalHeader {
+    background-color: #000c5e  ; /* Changed to the new color */
+    color: #e5c7bd; /* Changed font color */
+    border: none;
+    padding: 8px; /* Ensures padding is consistent */
+}
+
+QTableView QScrollBar:vertical {
+    background-color: #ffffff;
+    width: 10px;
+}
+
+QTableView QScrollBar::handle:vertical {
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+QTableView QScrollBar::add-line:vertical, QTableView QScrollBar::sub-line:vertical {
+    background-color: #ffffff;
+    height: 10px;
+}
+
+QTableView QScrollBar::add-page:vertical, QTableView QScrollBar::sub-page:vertical {
+    background-color: #ffffff;
+}
+
+QTableView::verticalHeader::section {
+    border-right: none;
+}
+
+/* Adjust the row height and column width for wider lines */
+QTableView::item {
+    min-height: 40px; /* Adjust this value as needed */
+}
+
+QTableView::column {
+    width: 100%; /* Make columns take full width */
+}</string>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_recherche">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>190</y>
+        <width>651</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid ; /* Light gray border */
+ border-radius: 15px;
+  box-sizing: border-box;
+  background-color:#D3D3D3; /* Light gray background */
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rfchBtn_2">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>190</y>
+        <width>93</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/mettre-a-jour-les-fleches.png</normaloff>:/resources/imgs/mettre-a-jour-les-fleches.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>36</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="viewCong">
+      <property name="geometry">
+       <rect>
+        <x>1382</x>
+        <y>190</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#viewCong{
+	font: 9pt &quot;Cambria&quot;;
+    color: #000c5e; /* Default text color */
+    font-size: 20px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#viewCong:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#viewCong:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}</string>
+      </property>
+      <property name="text">
+       <string>View All</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>110</y>
+        <width>311</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 30px;
+</string>
+      </property>
+      <property name="text">
+       <string>Statistics By Quantity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>410</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 30px;
+</string>
+      </property>
+      <property name="text">
+       <string>Profit Statistics By Brand</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>1290</x>
+        <y>20</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/picP.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>130</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 30px;</string>
+      </property>
+      <property name="text">
+       <string>Stock List</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rechercherBtn">
+      <property name="geometry">
+       <rect>
+        <x>1252</x>
+        <y>190</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/chercher.png</normaloff>:/resources/imgs/chercher.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>    Home</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/abri (1).png</normaloff>:/resources/imgs/abri (1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>220</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>  Employee</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/employes.png</normaloff>:/resources/imgs/employes.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>300</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Customer</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/contact.png</normaloff>:/resources/imgs/contact.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>380</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Delivery</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/livraison-rapide (1).png</normaloff>:/resources/imgs/livraison-rapide (1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>-40</x>
+        <y>610</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/deconnexion.png</normaloff>:/resources/imgs/deconnexion.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>520</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Supplier</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/courrier.png</normaloff>:/resources/imgs/courrier.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ProductListe">
+     <attribute name="title">
+      <string>Product Liste</string>
+     </attribute>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>1561</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/bg.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>1311</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/bgW.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>1270</x>
+        <y>20</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/picP.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/undo.png</normaloff>:/resources/imgs/undo.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>90</y>
+        <width>1311</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Downloads/crudbg.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>120</y>
+        <width>721</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView {
+    background-color: white;
+    color: #333333;
+    border: none;
+    selection-background-color: #c0e4f7;
+}
+
+QTableView::item {
+    padding: 8px;
+}
+
+QTableView::item:selected {
+    background-color: #eeeeee;
+    color: black;
+    font-family: Arial;
+}
+
+QHeaderView::section {
+    background-color: #000c5e  ; /* Changed to the new color */
+    color: #e5c7bd; /* Changed font color */
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px;
+    border: none;
+}
+
+QTableView::horizontalHeader {
+    background-color: #000c5e  ; /* Changed to the new color */
+    color: #e5c7bd; /* Changed font color */
+    padding: 8px; /* Ensures padding is consistent */
+}
+
+QTableView::verticalHeader {
+    background-color: #000c5e  ; /* Changed to the new color */
+    color: #e5c7bd; /* Changed font color */
+    border: none;
+    padding: 8px; /* Ensures padding is consistent */
+}
+
+QTableView QScrollBar:vertical {
+    background-color: #ffffff;
+    width: 10px;
+}
+
+QTableView QScrollBar::handle:vertical {
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+QTableView QScrollBar::add-line:vertical, QTableView QScrollBar::sub-line:vertical {
+    background-color: #ffffff;
+    height: 10px;
+}
+
+QTableView QScrollBar::add-page:vertical, QTableView QScrollBar::sub-page:vertical {
+    background-color: #ffffff;
+}
+
+QTableView::verticalHeader::section {
+    border-right: none;
+}
+
+/* Adjust the row height and column width for wider lines */
+QTableView::item {
+    min-height: 40px; /* Adjust this value as needed */
+}
+
+QTableView::column {
+    width: 100%; /* Make columns take full width */
+}</string>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_recherche_3">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>30</y>
+        <width>581</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid ; /* Light gray border */
+ border-radius: 15px;
+  box-sizing: border-box;
+  background-color:#D3D3D3; /* Light gray background */
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rechercherBtn_3">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>30</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/chercher.png</normaloff>:/resources/imgs/chercher.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rfchBtn_5">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>110</y>
+        <width>93</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/mettre-a-jour-les-fleches.png</normaloff>:/resources/imgs/mettre-a-jour-les-fleches.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>36</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>200</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e5e5e5;
+border: 0px solid ;
+  border-radius: 1px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_nom">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>260</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e5e5e5;
+border: 0px solid ;
+  border-radius: 1px;</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Prix">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>380</y>
+        <width>251</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e5e5e5;
+border: 0px solid ;
+  border-radius: 1px;</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Marque">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>440</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e5e5e5;
+border: 0px solid ;
+  border-radius: 1px;</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>510</y>
+        <width>321</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e5e5e5;
+border: 0px solid ;
+  border-radius: 1px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Fournisseur</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>560</y>
+        <width>321</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e5e5e5;
+border: 0px solid ;
+  border-radius: 1px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Livraison</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>230</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>ID_PRODUCT:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>280</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>NOM_PRODUCT:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>390</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>PRICE_PRODUCT:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>460</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>MARQUE_PRODUCT:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>520</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>SUPPLIER:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>560</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>LIVRERY:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AjoutStockBtn">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>610</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+#AjoutStockBtn {
+    color: #000c5e; /* Default text color */
+    font-size: 20px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#AjoutStockBtn:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#AjoutStockBtn:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>      Add</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/ajouter-un-bouton.png</normaloff>:/resources/imgs/ajouter-un-bouton.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>610</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_3 {
+    color: #000c5e; /* Default text color */
+    font-size: 20px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#pushButton_3:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#pushButton_3:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>     Delete</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/supprimer.png</normaloff>:/resources/imgs/supprimer.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifierStockBtn">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>610</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#modifierStockBtn {
+    color: #000c5e; /* Default text color */
+    font-size: 20px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#modifierStockBtn:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#modifierStockBtn:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>     Modify</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/mettre-a-jour-les-fleches.png</normaloff>:/resources/imgs/mettre-a-jour-les-fleches.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exportButton_6">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>610</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#exportButton_6 {
+    color: #000c5e; /* Default text color */
+    font-size: 20px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#exportButton_6:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#exportButton_6:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}</string>
+      </property>
+      <property name="text">
+       <string>    Export</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/importer-exporter.png</normaloff>:/resources/imgs/importer-exporter.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_gestion_stocks">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>610</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#btn_gestion_stocks {
+    color: #000c5e; /* Default text color */
+    font-size: 20px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#btn_gestion_stocks:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#btn_gestion_stocks:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}</string>
+      </property>
+      <property name="text">
+       <string>Management</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/importer-exporter.png</normaloff>:/resources/imgs/importer-exporter.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_sort">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>30</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>11</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #D3D3D3;
+
+border-radius:0px;
+color: rgb(0, 0, 127);
+border: 0px solid rgb(0, 0, 127); 
+padding: 10px 20px; 
+cursor: pointer;
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>ASC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DESC</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="sortBtn">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>30</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#sortBtn {
+    color: #000c5e; /* Default text color */
+    font-size: 22px;
+    background-color: #D3D3D3; /* Default background color (light gray) */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#sortBtn:hover {
+    background-color: #BEBEBE; /* Slightly darker gray for hover effect */
+    color: #000944; /* Slightly darker text color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#sortBtn:pressed {
+    background-color: #A9A9A9; /* Even darker gray for pressed effect */
+    color: #000722; /* Darker text color */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>  Sort</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/filtre.png</normaloff>:/resources/imgs/filtre.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>330</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>QUANTITY PRODUCT:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Quantite">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>320</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e5e5e5;
+border: 0px solid ;
+  border-radius: 1px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Historic_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>610</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#Historic_2 {
+    color: #000c5e; /* Default text color */
+    font-size: 20px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#Historic_2:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#Historic_2:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Historic</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/ajouter-un-bouton.png</normaloff>:/resources/imgs/ajouter-un-bouton.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>    Home</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/abri (1).png</normaloff>:/resources/imgs/abri (1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>  Employee</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/employes.png</normaloff>:/resources/imgs/employes.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Customer</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/contact.png</normaloff>:/resources/imgs/contact.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_15">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>380</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Delivery</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/livraison-rapide (1).png</normaloff>:/resources/imgs/livraison-rapide (1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>530</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Supplier</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/courrier.png</normaloff>:/resources/imgs/courrier.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_18">
+      <property name="geometry">
+       <rect>
+        <x>-30</x>
+        <y>610</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/deconnexion.png</normaloff>:/resources/imgs/deconnexion.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>450</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/blue.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_26">
+      <property name="geometry">
+       <rect>
+        <x>-60</x>
+        <y>460</y>
+        <width>301</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#ffe6dc;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;</string>
+      </property>
+      <property name="text">
+       <string>    Stock</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>imgs/logostock.jpg</normaloff>imgs/logostock.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Historic">
+     <attribute name="title">
+      <string>Historic</string>
+     </attribute>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1571</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/bg.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>1311</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/bgW.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>20</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/undo.png</normaloff>:/resources/imgs/undo.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>1370</x>
+        <y>10</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/picP.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>70</y>
+        <width>1311</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Downloads/crudbg.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonHistorique">
+      <property name="geometry">
+       <rect>
+        <x>1280</x>
+        <y>350</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#buttonHistorique{
+    color: #000c5e; /* Default text color */
+    font-size: 20px;
+    background-color: #e5c7bd; /* Default background color */
+    border: 0px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth animation for hover and press effects */
+}
+
+#buttonHistorique:hover {
+    background-color: #d4b3a7; /* Slightly darker shade for hover effect */
+    color: #000944; /* Slightly darker text color for hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+#buttonHistorique:pressed {
+    background-color: #c49f94; /* Even darker shade for pressed effect */
+    color: #000722; /* Darker text color for pressed */
+    transform: scale(0.95); /* Makes the button slightly smaller on press */
+}</string>
+      </property>
+      <property name="text">
+       <string>   Historic</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/fichier.png</normaloff>:/resources/imgs/fichier.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="historiqueLabel">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>100</y>
+        <width>981</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 4px solid rgb(0, 0, 0);
+padding: 10px 20px;
+cursor: pointer;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_19">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>140</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>    Home</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/abri (1).png</normaloff>:/resources/imgs/abri (1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_20">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>210</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>  Employee</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/employes.png</normaloff>:/resources/imgs/employes.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_21">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>290</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Customer</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/contact.png</normaloff>:/resources/imgs/contact.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_22">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>370</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Delivery</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/livraison-rapide (1).png</normaloff>:/resources/imgs/livraison-rapide (1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>440</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/resources/imgs/blue.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_23">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>450</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#ffe6dc;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>  Stock</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>imgs/logostock.jpg</normaloff>imgs/logostock.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_24">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>520</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#000c5e;
+font: 9pt &quot;Cambria&quot;;
+font-size: 23px;
+</string>
+      </property>
+      <property name="text">
+       <string>   Supplier</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/courrier.png</normaloff>:/resources/imgs/courrier.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_25">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>610</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/resources/imgs/deconnexion.png</normaloff>:/resources/imgs/deconnexion.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
