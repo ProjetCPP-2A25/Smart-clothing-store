@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+<file alias="QT">C:/Users/msi/Downloads/integration/Smart-clothing-store-Gestion_Employe_Client_integ/QT</file>
+<file alias="+=">C:/Users/msi/Downloads/integration/Smart-clothing-store-Gestion_Employe_Client_integ/+=</file>
+<file alias="core">C:/Users/msi/Downloads/integration/Smart-clothing-store-Gestion_Employe_Client_integ/core</file>
+<file alias="gui">C:/Users/msi/Downloads/integration/Smart-clothing-store-Gestion_Employe_Client_integ/gui</file>
+<file alias="charts">C:/Users/msi/Downloads/integration/Smart-clothing-store-Gestion_Employe_Client_integ/charts</file>
+</qresource>
+</RCC>

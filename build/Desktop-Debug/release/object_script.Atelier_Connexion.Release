@@ -1,0 +1,10 @@
+release/Employe.o
+release/arduino.o
+release/client.o
+release/livraison.o
+release/main.o
+release/mainwindow.o
+release/connection.o
+release/stock.o
+release/qrc_qmake_qmake_immediate.o
+release/moc_mainwindow.o

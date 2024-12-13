@@ -1,0 +1,10 @@
+debug/Employe.o
+debug/arduino.o
+debug/client.o
+debug/livraison.o
+debug/main.o
+debug/mainwindow.o
+debug/connection.o
+debug/stock.o
+debug/qrc_qmake_qmake_immediate.o
+debug/moc_mainwindow.o
