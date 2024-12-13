@@ -1,0 +1,51 @@
+<RCC>
+    <qresource prefix="/">
+        <file>11.png</file>
+        <file>abri (1).png</file>
+        <file>abri.png</file>
+        <file>acc.png</file>
+        <file>acci.png</file>
+        <file>ajouter-un-bouton.png</file>
+        <file>bg.png</file>
+        <file>bgW.png</file>
+        <file>black.png</file>
+        <file>blue.png</file>
+        <file>bouton-retour.png</file>
+        <file>chercher.png</file>
+        <file>contact (1).png</file>
+        <file>contact.png</file>
+        <file>courrier (1).png</file>
+        <file>courrier.png</file>
+        <file>crudbg.png</file>
+        <file>deconnexion (1).png</file>
+        <file>deconnexion.png</file>
+        <file>diagramme-circulaire.png</file>
+        <file>emp.png</file>
+        <file>empCon.png</file>
+        <file>employes (2).png</file>
+        <file>employes.png</file>
+        <file>filtre.png</file>
+        <file>importer-exporter.png</file>
+        <file>listEmp.png</file>
+        <file>livraison-rapide (1).png</file>
+        <file>log.png</file>
+        <file>logB.png</file>
+        <file>logistics-delivery (1).png</file>
+        <file>logistics-delivery.png</file>
+        <file>logo.png</file>
+        <file>logoG.png</file>
+        <file>mettre-a-jour-les-fleches.png</file>
+        <file>picG.png</file>
+        <file>picP.png</file>
+        <file>rech.png</file>
+        <file>rechCon.png</file>
+        <file>rechhh.png</file>
+        <file>rechsal.png</file>
+        <file>Sal.png</file>
+        <file>stat.png</file>
+        <file>supprimer.png</file>
+        <file>test.qrc</file>
+        <file>undo.png</file>
+        <file>livraison-rapide (2).png</file>
+    </qresource>
+</RCC>
